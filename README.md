@@ -11,10 +11,12 @@ cd sudoku-solver
 Install dependencies
 ```shell
 pip install -r requirements.txt
+```
 
 ## Usage
 ```shell
 python3 main.py
+```
 
 A webcam capture window open. Place the sudoku puzzle in front of the camera and try to have it fill most of the window. Press the spacebar to take a picture. A window containing the solution will then appear. Press esc to quit. 
 
