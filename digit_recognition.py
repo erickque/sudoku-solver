@@ -1,21 +1,13 @@
 import cv2
 import numpy as np
 
-# Train the k-NN classifier on the train features and labels
-def train():
-    features_train = np.loadtxt('./train_data/trainfeatures.data',np.float32)
-    labels_train = np.loadtxt('./train_data/trainlabels.data',np.float32)
-    labels_train = labels_train.reshape((labels_train.size,1))
-
-    clf = cv2.ml.KNearest_create()
-    clf.train(features_train, cv2.ml.ROW_SAMPLE, labels_train)
-
-    return clf
+from training import train
 
 def extract_grid(img):
     thresh = cv2.adaptiveThreshold(img,255,1,1,11,2)
     img2, contours,hierarchy = cv2.findContours(thresh,cv2.RETR_LIST,
                                                 cv2.CHAIN_APPROX_SIMPLE)
+    # Train the digit recognition classifier
     clf = train()
     
     # A zero represents an empty box in the grid
