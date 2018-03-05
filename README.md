@@ -1,6 +1,6 @@
 # Sudoku Solver
 
-Stuck on a sudoku? Use your webcam to take a picture and get the solution right away. 
+Stuck on a sudoku? Use your webcam to take a picture and get the solution right away! 
 
 ## Install
 Clone this repo
@@ -21,7 +21,5 @@ python3 main.py
 A webcam capture window open. Place the sudoku puzzle in front of the camera and try to have it fill most of the window. Press the spacebar to take a picture. A window containing the solution will then appear. Press esc to quit. 
 
 ## Example
-Input
 ![Input](images/capture1.png)
-Output
 ![Output](images/solution1.png)
