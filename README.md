@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python3 main.py
 ```
 
-A webcam capture window open. Place the sudoku puzzle in front of the camera and try to have it fill most of the window. Press the spacebar to take a picture. A window containing the solution will then appear. Press esc to quit. 
+A webcam capture window will open. Place the sudoku puzzle in front of the camera and try to have it fill most of the window. Press the spacebar to take a picture. A window containing the solution will then appear. Press esc to quit. 
 
 ## Example
 ![Input](images/capture1.png)
